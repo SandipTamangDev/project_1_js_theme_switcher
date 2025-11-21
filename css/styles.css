@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #333;
+    --bg-white: #f4f4f4;
+}
+
+.dark {
+    background-color: var(--bg-dark);
+}
+
+.white {
+    background-color: var(--bg-white);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    font-size: 40px;
+    border: 5px solid green;
+    color: purple;
+    background-color: yellow;
+    padding: 10px 20px;
+    box-shadow: 4px 4px black;
+}
+
+button:hover {
+    background-color: blue;
+    color: red;
+}
+
+button:active {
+    box-shadow: none;
+}
