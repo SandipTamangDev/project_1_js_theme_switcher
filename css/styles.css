@@ -4,36 +4,39 @@
     box-sizing: border-box;
 }
 
-html, body, section, button {
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+html, body {
+    height: 100%;
+}
 
+html, body, section, button {
+    transition: all 0.3s ease;
 }
 
 :root {
-    --bg-dark: #000000;
-    --bg-white: #ffffff;
+    --bg-dark: #000;
+    --bg-light: #fff;
+    --btn-dark: #000;
+    --btn-light: #fff;
 }
 
 .Dark {
     background-color: var(--bg-dark);
-    color: white;
+    color: var(--btn-light);
 }
 
 .Light {
-    background-color: var(--bg-white);
-    color: #000;
+    background-color: var(--bg-light);
+    color: var(--btn-dark);
 }
 
-.Light Button{
+.Light button{
     background-color: var(--bg-dark);
-    color: white;
+    color: var(--btn-light);
 }
 
-.Dark Button{
-    background-color: var(--bg-white);
-    color: #000;
+.Dark button{
+    background-color: var(--bg-light);
+    color: var(--btn-dark);
 }
 
 section {
@@ -42,13 +45,14 @@ section {
     justify-content: center;
     height: 100vh;
     flex-direction: column;
+    text-align: center;
     gap: 20px;
 }
 
 section h1 {
     font-size: clamp(2rem, 4vw, 5rem);
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     line-height: 1;
 }
 
@@ -59,10 +63,11 @@ button {
     font-weight: 400;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
-button:active {
-    box-shadow: none;
+button:hover {
+    filter: brightness(0.9);
 }
 
 .toggleHidden {
