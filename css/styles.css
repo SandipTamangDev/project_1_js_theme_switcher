@@ -41,3 +41,7 @@ button:hover {
 button:active {
     box-shadow: none;
 }
+
+.toggleHidden {
+    display: none;
+}
