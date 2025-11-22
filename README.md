@@ -94,3 +94,111 @@ By finishing this project, you will understand:
 * Class manipulation
 * CSS theming
 * Clean file organization
+
+
+
+
+# Theme Switcher — Full JS Toolset
+
+## 1. Select Elements
+
+* `document.querySelector()`
+* `document.querySelectorAll()`
+
+**Use:** get the toggle button, get the body, get icons.
+
+---
+
+## 2. Add/Remove Classes
+
+* `element.classList.toggle()`
+* `element.classList.add()`
+* `element.classList.remove()`
+* `element.classList.contains()`
+
+**Use:** switch between `"dark"` / `"light"` classes.
+
+---
+
+## 3. Read/Write Attributes
+
+* `element.getAttribute()`
+* `element.setAttribute()`
+* `element.removeAttribute()`
+
+**Use:** change icons (`src`, `data-*`), aria attributes.
+
+---
+
+## 4. Manipulate Text
+
+* `element.innerText`
+* `element.textContent`
+
+**Use:** update label ("Dark mode", "Light mode").
+
+---
+
+## 5. Event Handling
+
+* `element.addEventListener("click", fn)`
+* `element.addEventListener("change", fn)`
+
+**Use:** detect toggle click or switch change.
+
+---
+
+## 6. Local Storage
+
+* `localStorage.setItem("theme", value)`
+* `localStorage.getItem("theme")`
+* `localStorage.removeItem("theme")`
+
+**Use:** remember the theme after refresh.
+
+---
+
+## 7. Conditional Logic
+
+* `if/else`
+* Ternary: `condition ? a : b`
+
+**Use:** decide which theme is active.
+
+---
+
+## 8. CSS Custom Properties (Optional)
+
+JS → CSS:
+
+* `document.documentElement.style.setProperty("--bg", "#000")`
+
+**Use:** dynamic theme values beyond simple classes.
+
+---
+
+## 9. matchMedia (Optional)
+
+* `window.matchMedia("(prefers-color-scheme: dark)").matches`
+
+**Use:** auto-detect system dark mode.
+
+---
+
+## 10. Dataset (Optional)
+
+* `element.dataset.theme = "dark"`
+
+**Use:** store state inside HTML without classes.
+
+---
+
+## Minimal Core Set (Required)
+
+* `querySelector`
+* `addEventListener`
+* `classList.toggle`
+* `localStorage.setItem` / `localStorage.getItem`
+* `if(...)`
+
+Everything else is optional.
