@@ -4,17 +4,36 @@
     box-sizing: border-box;
 }
 
+html, body, section, button {
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease;
+
+}
+
 :root {
-    --bg-dark: #333;
-    --bg-white: #552c2c;
+    --bg-dark: #000000;
+    --bg-white: #ffffff;
 }
 
 .Dark {
     background-color: var(--bg-dark);
+    color: white;
 }
 
-.Light   {
+.Light {
     background-color: var(--bg-white);
+    color: #000;
+}
+
+.Light Button{
+    background-color: var(--bg-dark);
+    color: white;
+}
+
+.Dark Button{
+    background-color: var(--bg-white);
+    color: #000;
 }
 
 section {
@@ -22,15 +41,24 @@ section {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section h1 {
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -2%;
+    line-height: 1;
 }
 
 button {
-    font-size: 40px;
-    border: 5px solid green;
-    color: purple;
-    background-color: yellow;
+    font-size: clamp(1rem, 2vw, 3rem);
     padding: 10px 20px;
-    box-shadow: 4px 4px black;
+    border-radius: 20px;
+    font-weight: 200;
+    border: none;
+    outline: none;
 }
 
 button:active {
