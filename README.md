@@ -31,7 +31,7 @@ This project uses pure fundamentals—no frameworks.
 
 ## Folder Structure
 
-
+```
 theme_switcher/
 │── css
 |   └── styles.css
@@ -41,7 +41,7 @@ theme_switcher/
 │── index.html
 │── README.md
 └── screenshot.png
-
+```
 ---
 
 ## How to Use
