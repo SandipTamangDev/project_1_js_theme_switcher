@@ -20,23 +20,25 @@ html, body, section, button {
 }
 
 .Dark {
-    background-color: var(--bg-dark);
-    color: var(--btn-light);
+    background-color: var(--bg-light);
+    color: var(--btn-dark);
 }
 
 .Light {
-    background-color: var(--bg-light);
-    color: var(--btn-dark);
+    background-color: var(--bg-dark);
+    color: var(--btn-light);
+
 }
 
 .Light button{
-    background-color: var(--bg-dark);
-    color: var(--btn-light);
+    background-color: var(--bg-light);
+    color: var(--btn-dark);
+
 }
 
 .Dark button{
-    background-color: var(--bg-light);
-    color: var(--btn-dark);
+    background-color: var(--bg-dark);
+    color: var(--btn-light);
 }
 
 section {

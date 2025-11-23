@@ -65,8 +65,8 @@ button.addEventListener('click', () => {
     theme = theme === "Light" ? "Dark" : "Light";
     button.innerText = theme;
 
-    document.documentElement.classList.toggle("Light", theme === "Dark");
-    document.documentElement.classList.toggle("Dark", theme === "Light");
+    document.documentElement.classList.toggle("Light", theme === "Light");
+    document.documentElement.classList.toggle("Dark", theme === "Dark");
 
     localStorage.setItem("theme", theme);
 });
