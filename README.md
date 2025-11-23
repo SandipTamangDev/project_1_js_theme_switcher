@@ -44,9 +44,12 @@ theme_switcher/
 ```
 ---
 
-## How to Use
-1. Open `index.html` in your browser.
-2. Click the toggle button to switch between themes.
+## How It Works
+You can see the project live [here](https://sandiptamangdev.github.io/project_1_js_theme_switcher/).
+
+- Click the toggle button to switch between Light and Dark themes.  
+- The button always shows the theme you will switch to next.  
+- Your choice is saved in `localStorage` and persists on reload.
 
 
 ---
