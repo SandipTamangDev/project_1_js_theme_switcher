@@ -1,6 +1,4 @@
 const button = document.getElementById('button');
-// let theme;
-// const savedTheme = localStorage.getItem("theme");
 
 let theme = localStorage.getItem("theme");
 
@@ -67,8 +65,8 @@ button.addEventListener('click', () => {
     theme = theme === "Light" ? "Dark" : "Light";
     button.innerText = theme;
 
-    document.documentElement.classList.toggle("Dark", theme === "Dark");
-    document.documentElement.classList.toggle("Light", theme === "Light");
+    document.documentElement.classList.toggle("Light", theme === "Dark");
+    document.documentElement.classList.toggle("Dark", theme === "Light");
 
     localStorage.setItem("theme", theme);
 });
