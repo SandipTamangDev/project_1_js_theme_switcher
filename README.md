@@ -13,15 +13,44 @@ This project uses pure fundamentals—no frameworks.
 
 ---
 
-## **Project Goals**
-
-* Understand basic DOM selection
-* Use event listeners
-* Toggle CSS classes
-* Build two visual themes
-* Keep HTML, CSS, and JS separated and clean
+## Features
+- Light/Dark theme toggle
+- Smooth transitions
+- Saves theme in localStorage
+- Detects system theme
+- Accessible button with aria-label
 
 ---
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## Folder Structure
+
+
+theme_switcher/
+│── css
+|   └── styles.css
+│── js
+|   └── script.js
+│── Guide.md
+│── index.html
+│── README.md
+└── screenshot.png
+
+---
+
+## How to Use
+1. Open `index.html` in your browser.
+2. Click the toggle button to switch between themes.
+
+
+---
+
 
 ## **What I Learned**
 
@@ -84,3 +113,15 @@ This project uses pure fundamentals—no frameworks.
 * Ternary operators make short, two-outcome logic easier to read than a long `if/else`.
 
 * The toggle button should show **the opposite theme** (“Dark” when the current theme is Light, and vice-versa).
+
+
+## Future Improvements
+- Add animations to theme toggle button
+- Add a third theme (e.g., Sepia)
+- Add sound toggles with proper accessibility
+- Make the toggle an icon instead of text
+
+
+## Author
+[Sandip Tamang](https://www.tamangsandip.com.np/)
+
