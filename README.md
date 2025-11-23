@@ -6,6 +6,13 @@ This project uses pure fundamentals—no frameworks.
 
 ---
 
+## Screenshot
+
+![Theme Switcher Preview](./screenshot.png)
+
+
+---
+
 ## **Project Goals**
 
 * Understand basic DOM selection
